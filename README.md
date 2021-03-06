@@ -85,3 +85,11 @@
 - I don't know.
 - Wow. Concatenate two list and find cycle is same as finding intersection. Find start of the loop like Linked List Cycle II.
 
+21. Remove Nth Node From End of List
+- I tried to use two pointer. Make distance of n and delete the proper one. But it didn't work well on short list.
+- I was almost right. I had to move front pointer n times. If front is None, then head should be head.next. Else, move front/back and back.next = back.next.next
+
+22. Reverse Linked List
+- I solved it but it's too inefficient.
+- Let's use two pointers. Prev & Curr.
+
