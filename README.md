@@ -1,4 +1,4 @@
-# 리트코드 도장  
+# 리트코드 도장깨기  
 1. Max Consecutive Ones
 - Comparison btw maxv & tmpv
 
