@@ -1,4 +1,4 @@
-# leetcode-777
+# 리트코드 도장  
 1. Max Consecutive Ones
 - Comparison btw maxv & tmpv
 
@@ -100,3 +100,16 @@
 - I solved it by moving with comparison, but I had troubles handling empty l1 or empty l2.
 - We could use whole l1 or l2 if left!
 - We didn't have to make new node & We had to use dummy node for efficiency and return dummy.next!
+
+25. Binary Tree Preorder Traversal
+- I had a problem how to save and return answer list.
+- We can use DFS & stack to return list.
+- I tried BFS (queue) but this didn't work well. Cause it should be depth-first on left node.
+- I solve it again with approach of helper function used in Inorder/Postorder Traversal. It's much easier. Check it out on my submission.
+
+26. Binary Tree Inorder Traversal
+- Using helper function. Classic way.
+
+27. Binary Tree Postorder Traversal
+- Exactly same approach with Inorder traversal.
+
