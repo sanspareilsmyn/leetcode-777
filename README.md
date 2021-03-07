@@ -99,3 +99,4 @@
 24. Merge Two Sorted Lists
 - I solved it by moving with comparison, but I had troubles handling empty l1 or empty l2.
 - We could use whole l1 or l2 if left!
+- We didn't have to make new node & We had to use dummy node for efficiency and return dummy.next!
