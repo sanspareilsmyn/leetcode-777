@@ -93,3 +93,9 @@
 - I solved it but it's too inefficient.
 - Let's use two pointers. Prev & Curr.
 
+23. Design Linked List (Double Linked List)
+- Similar with #17
+
+24. Merge Two Sorted Lists
+- I solved it by moving with comparison, but I had troubles handling empty l1 or empty l2.
+- We could use whole l1 or l2 if left!
