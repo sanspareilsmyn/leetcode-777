@@ -126,5 +126,6 @@
 31. Path Sum
 - I knew how to handle it but had problem on returning bool.
 
-
-
+32. Construct Binary Tree from Inorder and Postorder Traversal
+- Very difficult. Maybe end of Postorder is head. 
+- Think abstractly.
