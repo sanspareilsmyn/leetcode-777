@@ -113,3 +113,18 @@
 27. Binary Tree Postorder Traversal
 - Exactly same approach with Inorder traversal.
 
+28. Binary Tree Level Order Traversal
+- I solved it by using tuple(val, level). Maybe there is more efficient solution.
+
+29. Maximum Depth of Binary Tree
+- Just solve it recursively.
+
+30. Symmetric Tree
+- I had an idea but couldn't implement it properly.
+- Classic recursive problem. Use another helper function.
+
+31. Path Sum
+- I knew how to handle it but had problem on returning bool.
+
+
+
