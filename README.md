@@ -129,3 +129,13 @@
 32. Construct Binary Tree from Inorder and Postorder Traversal
 - Very difficult. Maybe end of Postorder is head. 
 - Think abstractly.
+
+33. Construct Binary Tree from Preorder and Inorder Traversal
+- Very similar with 32. Make map_inorder and make recur function.
+
+34. Populating Next Right Pointers in Each Node
+- I think this is very similar problem with Symmetric Tree problem.
+- This solution is beautiful. https://leetcode.com/problems/populating-next-right-pointers-in-each-node/discuss/37465/Python-Solution-With-Explaintion
+- I have to solve it again later.
+
+
