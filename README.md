@@ -138,4 +138,14 @@
 - This solution is beautiful. https://leetcode.com/problems/populating-next-right-pointers-in-each-node/discuss/37465/Python-Solution-With-Explaintion
 - I have to solve it again later.
 
+35 ~ 40 Update
+
+41. Lowest Common Ancestor of a Binary Tree
+- I splited 2 cases and almost solved it but time-outed.
+- If root == p or q, we can just return root.
+- I didn't have to make additional finder function. I could just use the body function itself.
+
+42. Sort an Array
+- Basic of basic. Must be expert on this.
+- Reviewing Quick Sort. Main difficulty of Quick Sort in-place algorithm is that pivot index != partition index!
 
