@@ -138,7 +138,29 @@
 - This solution is beautiful. https://leetcode.com/problems/populating-next-right-pointers-in-each-node/discuss/37465/Python-Solution-With-Explaintion
 - I have to solve it again later.
 
-35 ~ 40 Update
+35. Reverse String
+- Easy. Use mid index. Maybe different
+- We could use two pointers.
+
+36. Swap Nodes in Pairs
+- I will use helper function and start with root.
+- Swap is complex. I know how to do but difficult to implement.
+- We had to use "dummy node" to return starting point! What is the use of self?
+
+37. Search in a Binary Search Tree
+- I did it by recursive way.
+
+38. Fibonacci Number
+- So easy with memoization.
+
+39. Pow(x, n)
+- Use Tail-recursion!
+- First I used classic recursive way. Why don't we also solve it in iterative way?
+- We also had to consider negative n.
+
+40. K-th Symbol in Grammar
+- I reversed the string before but time-outed. Have to figure out another way.
+- We didn't have to make all strings. There is a rule. Same rule that I found but didn't have to make all strings. This is beautiful.
 
 41. Lowest Common Ancestor of a Binary Tree
 - I splited 2 cases and almost solved it but time-outed.
@@ -148,4 +170,35 @@
 42. Sort an Array
 - Basic of basic. Must be expert on this.
 - Reviewing Quick Sort. Main difficulty of Quick Sort in-place algorithm is that pivot index != partition index!
+
+43. Validate Binary Search Tree
+- I have a logic and clue but always have trouble on implementing how to return answer.
+- Add order in inorder traversal and compare list.
+- Compare left, right value with helper function.
+
+44. Search a 2D Matrix II
+- I tried to solve with simple DFS but time-outed. Have to use ascending property of matrix.
+- I splited two case. Larger and smaller. But also time-outed.
+- This map is special. Left one is smallest. Upper one is smallest. First find the row and find column.
+
+45. Valid Sudoku
+- Row, Column, Box check module.
+
+46. Combinations
+- I really wanted to solve this problem clearly before. Let's break it.
+- We have to approach with DFS.
+- Had some trouble with combining lists.
+
+47. Permutations
+- Similar with Combinations
+
+48. Same Tree
+- Why my solution is wrong? I left one condition. p.val == q.val. Silly mistake.
+
+49. Generate Parentheses
+- I think this is also backtracking dfs question. Use ( counter and ) counter.
+- I just made all possible setups and created another checking module. Terrible efficiency.
+
+50. Binary Search
+- Had trouble finishing search but debugged with printing low, mid, high.
 
