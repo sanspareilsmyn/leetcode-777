@@ -202,3 +202,20 @@
 50. Binary Search
 - Had trouble finishing search but debugged with printing low, mid, high.
 
+51. sqrt(x)
+- I used binary search. For truncating, I returned low - 1 if low * low != x.
+
+52. Guess Number Higher or Lower
+- Easy Binary Search question.
+
+53. Search in Rotated Sorted Array
+- Modular calculation with pivot + Binary Search
+
+54. First Bad Version
+- Easy. Set mid as True & False intersection.
+
+55. Find Peak Element
+- Input is not sorted type one. Is it meaningful to use Binary Search in this case too?
+- I solved it with Binary Search but efficiencty is terrible. (O(n))
+- To apply BS, I had to understand 4 cases of peak condition.
+
