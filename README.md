@@ -219,3 +219,6 @@
 - I solved it with Binary Search but efficiencty is terrible. (O(n))
 - To apply BS, I had to understand 4 cases of peak condition.
 
+56. Find Minimum in Rotated Sorted Array
+- From here!
+
