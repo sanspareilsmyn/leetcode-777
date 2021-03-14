@@ -226,4 +226,17 @@
 57. Valid Perfect Square
 - Easy Binary Search with lower/upper bound.
 
-58. 
+58. N-ary Tree Preorder Traversal
+- Care that children is list.
+
+59. N-ary Tree Postorder Traversal
+- Had a little trouble setting orders.
+
+60. N-ary Tree Level Order Traversal
+- I used tuple with (val, level). Maybe using dictionary(hash) might be more efficient.
+
+61. Maximum Depth of N-ary Tree
+- Had problem on helper function. Just used DFS.
+
+62. Binary Search Tree Iterator
+- I made inorder function and passed but efficiency was very low.
