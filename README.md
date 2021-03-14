@@ -219,6 +219,11 @@
 - I solved it with Binary Search but efficiencty is terrible. (O(n))
 - To apply BS, I had to understand 4 cases of peak condition.
 
-56. Find Minimum in Rotated Sorted Array
-- From here!
+56. Find K Closest Elements
+- I did it by finding target index and adding left & right. But this needs improvement in efficiency.
+- Use sliding window technique. return low ~ low+k
 
+57. Valid Perfect Square
+- Easy Binary Search with lower/upper bound.
+
+58. 
