@@ -240,3 +240,23 @@
 
 62. Binary Search Tree Iterator
 - I made inorder function and passed but efficiency was very low.
+
+63. Insert into a Binary Search Tree
+- Not difficult. Just had a little trouble at assigning new node.
+
+64. Delete Node in a BST
+- I knew how to make a logic, but didn't work at deleting node and synchronizing with original tree.
+- The reason the node wasn't remove was that I didn't use recursive function to handle original node pointer.
+- It doesn't matter we use rightmost node of left child or leftmost node of right child.
+- Very important. Check it out again later.
+
+65. Kth Largest Element in a Stream
+- I used internal sort algorithm. How about not using it?
+- Using priority queue. (Check how to use heapq library)
+- Using priority queue is much efficient in finding k-th value in unordered array than sorting array itself!!!
+
+66. Lowest Common Ancestor of a Binary Search Tree
+- Because it's BST, we can compare max(p.val, q.val) / min(p.val, q.val) with root.val
+
+
+
