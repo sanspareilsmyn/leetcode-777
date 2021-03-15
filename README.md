@@ -258,5 +258,8 @@
 66. Lowest Common Ancestor of a Binary Search Tree
 - Because it's BST, we can compare max(p.val, q.val) / min(p.val, q.val) with root.val
 
-
+67. Contains Duplicate III
+- Simple loop makes timeout.
+- I tried to use priority queue but failed.
+- This is bucket sort algorithm.
 
