@@ -263,3 +263,11 @@
 - I tried to use priority queue but failed.
 - This is bucket sort algorithm.
 
+
+Design Circular Queue
+- Reviewed how to handle front & rear pointer at empty case.
+
+Number of Islands
+- Classic. Tricky because grid element was "1", not "0".
+
+
