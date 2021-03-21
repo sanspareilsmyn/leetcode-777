@@ -270,4 +270,23 @@ Design Circular Queue
 Number of Islands
 - Classic. Tricky because grid element was "1", not "0".
 
+Open the Lock
+- I don't understand how to change 4 digits & filtering deadends.
+- Very similar to 2D matrix. Think deeply of its idea.
+- I made it again but time-out. Because of range(-1, 1). It should be (-1, 1).
+- Important! If you have to find element, use set(hash). Don't use list. Same logic. Totally different result with list vs set!!!
+- Why BFS? Why Not DFS? : If you use DFS, totally wrong. It's not minimum change count.
+
+Perfect Squares
+- I did it. Perfectly understood the logic of BFS. But memory usage is terrible. What's the better way?
+- This can be solved with DP, not BFS. Its efficiency is better.
+
+Min Stack
+- Priority queue? No this is stack. Just use O(1) Memory.
+
+Daily Temperatures
+- I solved test case in two implementations but both time-outed. Maybe problem in logic itself.
+- What's the difference btw my method and solution? 
+- I did it by creating list starting with current idx and literally iterated until finding larger one.
+- Solution didn't find answer one by one. If next one is smaller than current one, just put in stack. If larger, pop all relevant indexes.
 
