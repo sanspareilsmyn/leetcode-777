@@ -290,3 +290,9 @@ Daily Temperatures
 - I did it by creating list starting with current idx and literally iterated until finding larger one.
 - Solution didn't find answer one by one. If next one is smaller than current one, just put in stack. If larger, pop all relevant indexes.
 
+Evaluate Reverse Polish Notation
+- I did it in one chance. Used number stack and using calcuator function.
+
+Clone Graph
+- I did it. Quite difficult but can handle it with DFS and set.
+
