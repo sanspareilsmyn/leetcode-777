@@ -296,3 +296,13 @@ Evaluate Reverse Polish Notation
 Clone Graph
 - I did it. Quite difficult but can handle it with DFS and set.
 
+Decode String
+- I had problem handling with numbers(especially '0'). Because numbers are also saved in str form. 
+- I handled original string into list while handling numbers. Then I used my original logic.
+- Be careful. When numbers are given in str format, you have to take care of digits.
+
+Flood Fill
+- Simpel DFS with 2D Map.
+
+01 Matrix
+- 
