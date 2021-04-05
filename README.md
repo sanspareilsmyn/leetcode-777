@@ -1,4 +1,4 @@
-# 리트코드 도장깨기  
+# 리트코드 도장깨기
 1. Max Consecutive Ones
 - Comparison btw maxv & tmpv
 
@@ -127,7 +127,7 @@
 - I knew how to handle it but had problem on returning bool.
 
 32. Construct Binary Tree from Inorder and Postorder Traversal
-- Very difficult. Maybe end of Postorder is head. 
+- Very difficult. Maybe end of Postorder is head.
 - Think abstractly.
 
 33. Construct Binary Tree from Preorder and Inorder Traversal
@@ -263,46 +263,338 @@
 - I tried to use priority queue but failed.
 - This is bucket sort algorithm.
 
+68. Implement Trie (Prefix Tree)
+- I had even no clue how to make an initiator.
 
-Design Circular Queue
+69. Map Sum Pairs
+- This was difficult to initiate the node.
+
+70. Design HashSet
+- Without built-in hash table libraries.
+- I used the range of key and used modular calculation to define size of hashset.
+
+71. Design HashMap
+- What is difference btw HashSet & HashMap?
+- HashSet has only one value. HashMap has (key, value).
+- Something wrong with hash size or sth.
+- I had to use extra ListNode.
+
+72. Contains Duplicate
+- Easy Dictionary problem.
+- We could also use set(this is also hash table) and length of it.
+
+73. Single Number
+- If you add all nums and check value == 1, it's 2n calculation.
+- If you delete hash if it exists, it's n calcuation.
+
+74. Intersection of Two Arrays
+- Easy set problem.
+
+75. Happy Number
+- Difficult in approach. Spent 10 mins and no clue. Checked answer.
+- Calculate and return False if infinite loop found. It was brute-force way.
+
+76. Two Sum
+- Used hash table and found target - val technique.
+
+77. Isomorphic Strings
+- Made hash[char] = idx and tried to compare.
+
+78. Minimum Index Sum of Two Lists
+- Used hash table of index and used set - intersection.
+
+79. Intersection of Two Arrays II
+- I used intersection and count to append in answer list.
+
+80. Contains Duplicate II
+- Corner case! if k == 0? Passed but not efficient.
+
+81. Group Anagrams
+- Even though hashval is same, maybe char might not be same. How to handle it?
+- How to handle hash collision?
+- First, Seperate Chaining. Use Linked List as a node.
+- Second, Open addressing. No need to use extra memory like Linked List. Use empty memory in hash table.
+- I didn't have to used sum of ord as key. You could also use tuple ('a', 'c', 'e') as a key.
+
+82. Find Duplicate Subtrees
+- I think my method is right. Make hash table and add [node.left, node.right] & Add to answer if it already exists.
+- My solution didn't catch root with children.
+
+83. Jewels and Stones
+- Very easy dictionary problem.
+
+84. Longest Substring Without Repeating Characters
+- First I iterated the string only once but that's not right.
+- You have to iterate len(s) times to check it until same char comes out.
+- Much efficient way is that you remember the index of previously appeared letter and use it.
+- Very important question.
+
+85. 4Sum II
+- I tried to make hash with idx, make combination and check if there's element in all list.
+- My original thought was not wrong. Make dict of AB Sum and CD Sum and make 0.
+
+86. Top K Frequent Elements
+- Easy with using zip, lambda.
+
+87. Insert Delete GetRandom O(1)
+- I did it with using dictionary.
+
+88. Find Pivot Index
+- I made it with slicing but very slow runtime.
+- Think of it as a balance. Move weight to other. Don't calculate everytime.
+
+89. Largest Number At Least Twice of Others
+- Easy. But memory efficiency was not good.
+
+90. Plus One
+- Easy ''.join handling question.
+
+91. Diagonal Traverse
+- This is not n x n. It's m x n.
+- Order is important when extending.
+
+92. Spiral Matrix
+- I was getting trouble in handling m, n = 1 case.
+- Damn there was a one-liner. Like peeling apple, rotate and pop(0) upper line.
+- Matrix rotation : Transpose and reverse order
+
+93. Longest Common Prefix
+- I really had trouble figuring out about idx. But it's easy.
+- Use zip function!
+
+94. Array Partition I
+- Sort and add odd index.
+
+95. Two Sum II - Input array is sorted
+- With my method, I can't handle if target is negative.
+- I used binary search.
+
+96. Minimum Size Subarray Sum
+- Found least maximum element index and incremented the size of subarray.
+- I thought I'm right but didn't work on specific cases. Maybe I'm missing some conditions.
+- You can't sort it. In other words, you can't change the order of array.
+- Second approach. Find most closest index and slide window left and right.
+
+97. Reverse Words in a String
+- Easy split question.
+
+98. Reverse Words in a String III
+- Easy.
+
+99. Design Circular Queue
+- Review basic theory of circular queue.
 - Reviewed how to handle front & rear pointer at empty case.
 
-Number of Islands
+100. Number of Islands
 - Classic. Tricky because grid element was "1", not "0".
 
-Open the Lock
+101. Open the Lock
 - I don't understand how to change 4 digits & filtering deadends.
 - Very similar to 2D matrix. Think deeply of its idea.
 - I made it again but time-out. Because of range(-1, 1). It should be (-1, 1).
 - Important! If you have to find element, use set(hash). Don't use list. Same logic. Totally different result with list vs set!!!
 - Why BFS? Why Not DFS? : If you use DFS, totally wrong. It's not minimum change count.
 
-Perfect Squares
+102. Perfect Squares
 - I did it. Perfectly understood the logic of BFS. But memory usage is terrible. What's the better way?
 - This can be solved with DP, not BFS. Its efficiency is better.
 
-Min Stack
+103. Min Stack
 - Priority queue? No this is stack. Just use O(1) Memory.
 
-Daily Temperatures
+104. Daily Temperatures
 - I solved test case in two implementations but both time-outed. Maybe problem in logic itself.
-- What's the difference btw my method and solution? 
+- What's the difference btw my method and solution?
 - I did it by creating list starting with current idx and literally iterated until finding larger one.
 - Solution didn't find answer one by one. If next one is smaller than current one, just put in stack. If larger, pop all relevant indexes.
 
-Evaluate Reverse Polish Notation
+105. Evaluate Reverse Polish Notation
 - I did it in one chance. Used number stack and using calcuator function.
 
-Clone Graph
+106. Clone Graph
 - I did it. Quite difficult but can handle it with DFS and set.
 
-Decode String
-- I had problem handling with numbers(especially '0'). Because numbers are also saved in str form. 
+107. Decode String
+- I had problem handling with numbers(especially '0'). Because numbers are also saved in str form.
 - I handled original string into list while handling numbers. Then I used my original logic.
 - Be careful. When numbers are given in str format, you have to take care of digits.
 
-Flood Fill
+108. Flood Fill
 - Simpel DFS with 2D Map.
 
-01 Matrix
-- I didn't handle it well. Maybe tomorrow.
+109. 01 Matrix
+- I struggled for a long time but couldn't handle it.
+- Solution : Add 0 points at queue, visited. Pop zeroes and make + 1
+
+110. Keys and Rooms
+- I confused about making visited list.
+- This doesn't use visited. Cause it can enter the room again.
+- Don't think of it as literally visiting once at a time, just collect every possible key next to curr.
+- I tried to collect keys but failed to step before.
+- Problem was so easy but I didn't understand it properly. I didn't have to move once at a time!
+
+111. 3Sum
+- Used combinations but had to filter things that have same element. Timeout.
+- Special Method needed. How about binary search?
+- I implemented it but didn't properly iterate the index. But I think I can handle it soon.
+- I used binary search method and used mid pointer but solution used two pointers and +1 and -1.
+- Important point! You shouldn't use break. You have to check every possibility on starting i.
+
+112. Best Time To Buy And Sell Stock II
+- Not difficult. Just sell every time when you can earn profit. Greedy approach.
+- Can be solved with DP. I need DP Training.
+
+113. Set Matrix Zeroes
+- I changed all with BFS. We have to control where we gonna stop.
+- I added count variable. This doesn't work well.
+- Concentration and mistakes!
+- Didn't have to solve with BFS. Just use marker zero rows [None] * size and check it and transform it. O(m+n).
+
+114. Rotate Array
+- Pop and insert method (Method 1)
+- Slicing (Method 2)
+- Reverse method is really good. If you want k = 3, Reverse whole list -> Reverse [0:3] -> Reverse [3:]
+
+115. Longest Palindromic Substring
+- First I used Brute-Force method. Compared every possible strings. Timeout.
+- What is possible? Hash table of characters? I used combinations and hash of characters. Success! But it can be improved.
+- Use helper function that compares inner and outer. Both odd and even cases.
+
+116. Rotate Image
+- I learned it before. Trasnposing and Reverse.
+- Why doesn't it work? Result is right but it doesn't apply to result.
+
+117. Increasing Triplet Subsequences
+- First I was supposed to do Brute-Force (O(n^2)).
+- Second I tried it by DP. (O(n)) This didn't work. This is just a index 0 case of Brute-Force.
+- Solution used first, second memory and initialized it as float('inf').
+
+118. Reverse Integer
+- Logic is easy. But
+
+119. Add Two Numbers
+- I did it with dummy node and [::-1] but efficiency was terrible.
+- I didn't have to literally calculate everything. I could just implement add and carry.
+- I learned how to use divmod. It returns // and %.
+- Don't make seperate loop for l1, l2 and carry. Go together.
+
+120. First Unique Character in a String
+- Inserting Hash : O(n), Iterating Hash : O(n). Is there better way than this?
+- I learned how to use collections.Counter.
+
+121. Odd Even Linked List
+- Use Dummy Node Technique. How to well handle changing node pointer?
+- I did it. Controlling and holding pointer is difficult.
+
+122. Valid Anagram
+- Use Counter. Life is easy.
+
+123. Valid Palindrome
+- If you want to use regex, use re.compile(condition) & re.findall(string)!
+
+* DP
+124. Unique Paths
+- Classic DP Problem with memoization. Make ans map with same size of original map. Do summation.
+
+125. Unique Paths II
+- Similar but don't initialize if there's obstacle.
+
+126. Minimum Path Sum
+- Easy.
+
+127. Decode Ways
+- Very difficult to think of idea.
+- I figured out how to solve it. First, save 0 ~ 9. If something comes more, it's only possible if it combines with one with before.
+- Difficult. I got it with solution. Try it again.
+
+128. Unique Binary Search Trees
+- Almost impossible to think of rules if you don't know it priorly.
+- Suppose you have i on the node. Then, 1 ~ (i-1) will be at the left and (i+1) ~ n will be at the right.
+- Use this and make DP. Brilliant.
+
+129. Interleaving String
+- I just tried to pop in an order but it doesn't be removed in order.
+- I used while loop but don't know where to stop if it's False.
+
+130. Majority Element
+- Easy hash table question.
+
+131. ZigZag Conversion
+- Easy with making index list.
+
+132. Excel Sheet Column Number
+- This is 26-digit number counting. Easy.
+
+133. 4Sum
+- Combinations => timeout.
+- This is so so difficult.
+
+134. Factorial Trailing Zeroes
+- Factorize and count 2, 5. return min count of 2 & 5.
+- Use that 5 is always more than 2.
+
+135. Divide Two Integers
+- I just kept minusing with careful treat of +, -.
+- It accelerated minusing by multipling divisor.
+- Learned how to handle 32 bit integer overflow condition.
+
+136. Reverse Bits
+- Didn't know how to handle binary string.
+
+137. Next Permutations
+- I don't know how to approach it. How about Brute Force? This will be definitely timeouted.
+- Use two steps. First, figure out where first ascending comes from the back. Next, find which element is larger than target from the back. Third, reverse it.
+
+138. Remove Linked List Elements
+- Use dummy node. Having trouble handling same element case.
+- We could just use single pointer.
+
+139. Find First and Last Position of Element in Sorted Array
+- Binary Search? Yes. But efficiency was not that good.
+
+140. Count Primes
+- Easy. Make 2, 3 as standard and use modular calculation.
+- This is "Less than" question.
+- Time outed. What's the efficient algorithm for finding prime numbers?
+- Prime Number == Sieve of Eratostenes! Use DP.
+
+141. Count and Say
+- I used count function. I think I misunderstood the question. Try again!
+- I did it as rule based counting. What's other creative way to solve it?
+
+142. Implement Stack using Queues
+- Easy.
+
+143. Combination Sum
+- DFS. But duplication issue. Not efficient.
+
+144. Invert Binary Tree
+- DFS right. I think I'm close but little bit tricky.
+- I understood. You had to draw the tree.
+
+145. Combination Sum II
+- I made a logic similar to Combination Sum but timeout. Need to find efficient way.
+- Technique : skip the same element by nums[i] == nums[i-1].
+
+146. Summary Ranges
+- I have trouble setting pointers.
+- Finally did it by myself.
+
+147. Multiply Strings
+- Not that difficult. Use pow(10) calculations.
+
+148. Power of Two
+- I thought it too simple way. Of course if ends in 2, 4, 6, 8 but 6 is not power of 2!.
+- How about memoization? Time outed.
+- Bit manipulation! 1000(8) & 0111(7) should be zero!.
+
+149. Jump Game II
+- Greedy? DFS?
+- I used greedy but having trouble returning value.
+- I think I didn't understand the condition well. (On len(nums) == 1)
+- This is quite tricky but good question.
+
+150. 
+
+
+
