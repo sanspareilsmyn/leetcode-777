@@ -594,7 +594,184 @@
 - I think I didn't understand the condition well. (On len(nums) == 1)
 - This is quite tricky but good question.
 
-150. 
+150. Palindrome Linked List
+- With O(n) time complexity and O(1) space complexity!
+- Very difficult technique. You have to reverse first half.
 
+151. Permutation II
+- I did it at just one trial. Using DFS is key to permutation. This is not efficient. use nums[i] == nums[i-1].
 
+152. Binary Tree Paths
+- DFS? Easy.
 
+153. Jump Game
+- Greedy. I had same trouble when solving II.
+- Succeeded but efficiency is terrible.
+- We can go back and check whether we arrive at zero.
+
+154. Add Digits
+- Do it without any loop/recursion in O(1) runtime?
+- I used loop and it was right.
+
+155. Merge Intervals
+- Greedy. I didn't properly handle range.
+- Very good question. I did it. Key is to sort with starting point.
+
+156. Ugly Number
+- Used while loop and modular.
+
+157. Insert Interval
+- Easy. Append, sort and merge.
+
+158. Missing Number
+- Had trouble handling corner cases.
+- But my idea was right. Sum - numsum.
+
+159. Spiral Matrix II
+- How to spin left 90 degree?
+- I misunderstood the question.
+- In reverse, start with zero matrix and stop when it becomes full.
+
+160. Word Pattern
+- Corner cases. Be careful! You should always think of all possible cases before submitting.
+
+161. Rotate List
+- I just did it by calculate length and moving pointers directly.
+- I think my solution is better.
+
+162. Nim Game
+- DP? Greedy?
+- I used DP but memory error. I can't assign that big list. Have to solve it recursively.
+- Used Recursion but wrong.
+- You win if n % 4 != 0. This is like a brain-teaser.
+
+163. Simplify Path
+- I understood. Simple up down counting doesn't work. Cause .. doesn't mean anymore if already in root.
+- I did it. This is stack question.
+
+164. Range Sum Query - Immutable
+- Easy.
+
+165. Search a 2D Matrix
+- Corner cases. What if target is larger than matrix maximum? What if row length is 1?
+
+166. Power of Three
+- Easy with while loop.
+
+167. Sort Colors
+- Why not quick sort? I always forget how to implement quick sort.
+- Quick sort!
+
+168. Power of Four
+- Easy.
+
+169. Combinations
+- I did it as usual with dfs but timeout.
+- How about only using cand[i+1:]?
+
+170. Reverse Vowels of a String
+- Capital letter... not a good question.
+
+171. Subsets
+- Easy backtracking similiar with Perm, Comb.
+
+172. Ransom Note
+- First, Brute Force is possible. Any better way?
+- No this is not string match. This is hash table problem.
+- Using counter is the best way.
+
+173. Word Search
+- BFS. Memory Limit Exceeded. My logic should be modified.
+- Check solution. DFS with clean code. Memorize it.
+
+174. Find the Difference
+- Easy. Sort and compare.
+
+175. Remove Duplicates from Sorted Array II
+- This is tricky and complicated.
+
+176. Is Subsequence
+- Tricky. Two Pointer technique.
+
+177. Search in Rotated Sorted Array II
+- Make it right in order and binary search.
+
+178. Sum of Left Leaves
+- I have trouble returning final value.
+- Did it with BFS.
+
+179. Remove Duplicates from Sorted List II
+- Two pointer. Almost right.
+- Had to use Three pointer.
+
+180. Convert a number to Hexadecimal
+- Let's do it with/without library.
+- I think it's important question.
+- If you have to use 2's Complement, add overhead num to original number.
+
+181. Partition List
+- Used two pointer.
+
+182. Longest Palindrome
+- I thought adding all even numbers and add maximum odd number. But my logic was wrong.
+- Odd number can be used! minus one!
+
+183. Gray Code
+- Make all possible set and change it to int.
+- How do we implement Gray Code?
+- Bit Manipulation.
+
+184. Subsets II
+- When do we have to finish backtracking?
+- My memory usage was terrible.
+
+185. Fizz Buzz
+- So easy
+
+186. Reverse Linked List II
+- Reversing is difficult technique. Master it today.
+
+187. Add Strings
+- Without converting to integer.
+- Make list -> Reverse -> Add -> Treat Carry -> Join.
+
+188. Restore IP Addresses
+- Choosing three points and check possibilities.
+- Handling 0 cases was tricky & Timeout for len(s) > 17.
+- Solution used Backtracking.
+
+189. Number of Segments in a String
+- Not a good question. Use a stack
+
+190. Unique Binary Search Trees
+- I remember how to do it.
+
+191. Unique Binary Search Trees II
+- Recursion? Very difficult. GG.
+
+192. Arranging Coins
+- Easy.
+
+193. Interleaving String
+- Very Difficult. I didn't even realize this was dp problem.
+- With DFS.
+
+194. Binary Tree Zigzag Level Order Traversal
+- I did it with making with_level array.
+
+195. Convert Sorted List to Binary Search Tree
+- Select mid point, make then.
+- Techinique -> How to get pointer on half of Single Linked List.
+
+196. Path Sum II
+- Backtracking. Did it but very inefficient.
+- I used sum calculation for every iteration. This is not good.
+
+197. Flatten Binary Tree to Linked List
+- Very difficult recursion question.
+
+198. Triangle
+- DP.
+
+199. Sum Root to Leaf Numbers
+- Easy DFS. 
