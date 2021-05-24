@@ -774,4 +774,253 @@
 - DP.
 
 199. Sum Root to Leaf Numbers
-- Easy DFS. 
+- Easy DFS.
+
+200. Surrounded Regions
+- I did it but terrible efficiency.
+
+201. Palindrome Partitioning
+- How to partition?
+- With DFS, adding up if some part is palindrome.
+- Good technique.
+
+202. Gas Station
+- Implementation.
+- Solution used greedy.
+
+203. Single Number II
+- Without using extra memory + Linear runtime
+- If we check size 3 window, there're two cases. One. Duplication. Two. No Duplication.
+
+204. Copy List with Random Pointer
+- Difficult technique with Hash.
+
+205. Word Break
+- Simple DFS won't work.
+- You should have used DP.
+
+206. Reorder List
+- Difficult with handling Linked List. I reviewed how to split, reverse the LL.
+
+207. LRU Cache
+- I think it's using stack and hash.
+- Be careful about logic. Memory usage is terrible.
+- Solution used collections.OrderedDict()
+
+208. Maximum Product Subarray
+- for loop x 2? First approach timeouted.
+- Kadene's Algorithm : From here tomorrow!
+- Sum is easy but Product is difficult.
+
+209. Compare Version Numbers
+- Easy string handling.
+
+210. Fraction to Recurring Decimal
+- Math problem. This is dirty.
+
+211. Largest Number
+- Sort and Backtracking? Using sort & lambda function.
+
+212. Repeated DNA Sequences
+- Hash? Terrible Efficiency
+- Use DefaultDict
+
+213. House Robber
+- Even and odd? No. [2,1,1,2] is Counter example.
+- DP!
+
+214. Binary Tree Right Side View
+- Difficult. Tried to seperate in 4 cases but stucked in Yes left & Yes right case.
+- OMG Solution is beautiful.
+
+215. Bitwise AND of Numbers Range
+- If you just make a loop, timeout.
+- Bit Manipulation is very difficult. Pass.
+
+216. Course Schedule
+- Finding loop with Union-Find algorithm.
+- Use BFS or DFS.
+
+217. Implement Trie(Prefix Tree)
+- What kind of data structure we should use?
+- Use defaultdict when creating TrieNode
+
+218. Course Schedule II
+- Similar with Course Schedule (DFS).
+- Using self to make it global in the class.
+
+219. Design Add and Search Words Data Structure
+- Important to decide which data structure to use.
+- Trie?
+- My Idea was right but had problem implementing it.
+- Simple idea. Difficult Implementation.
+
+220. House Robber II
+- Circular DP.
+- Slicing every case and solve it like House Robber I.
+
+221. Kth Largest Element in an Array
+- Quick Sort Review.
+- You can also use heap.
+
+222. Combination Sum III
+- Tried to solve with DFS and to_divide.
+- Succeeded but terrible efficiency.
+
+223. Maximal Square
+- Backtracking but no idea how to find square.
+- This is DP. This is genius.
+
+224. Count Complete Tree Nodes
+- I just simply counted left max count and right max count. This was not enough.
+- Magnificent recursion.
+
+225. Rectangle Area
+- This is annoying case split question.
+
+226. Basic Calculator II
+- Used two stacks but I think it's terrible idea.
+
+227. Majority Element II
+- math.floor and defaultdict
+
+228. Kth Smallest Element in a BST
+- Inorder traversal
+
+229. Product of Array Except Self
+- Case split. Zero > 1 & Zero == 1 & Zero == 0
+
+230. Different Ways to Add Parantheses
+- Backtracking?
+- Simple Backtracking doesn't work. It's like a combination.
+- This was DP.
+
+231. Reverse Bits
+- I have no idea about bit manipulation.
+- '{0.032b}'.format(n) # https://stackoverflow.com/questions/16887493/write-a-binary-integer-or-string-to-a-file-in-python/16888298
+
+232. Number of 1 Bits
+- '{0.032b}'.format(n)
+
+233. Minimum Moves to Equal Array Elements
+- No idea how to figure it out.
+- Greedy method. Brilliant.
+
+234. Assign Cookies
+- Greedy.
+
+235. Repeated Substring Pattern
+- Brute Force?
+
+236. Hamming Distance
+- Bit manipulation
+- bin(x ^ y).count('1')
+
+237. Island Perimeter
+- Tricky DFS but did it.
+
+238. Number Complement
+- Easy.
+
+239. License Key Formatting
+- Remove - and arrange again.
+
+240. Construct the Rectangle
+- Brute Force but time out issue.
+- Terrible efficiency.
+- Use math.sqrt and go down until mod == 0.
+
+241. Single Number III
+- Hash
+
+242. Median of Two Sorted Arrays
+- I just merged and sorted.
+- Maybe merge and binary sort by index.
+
+243. Ugly Number II
+- Brute Force. Timeout. Any better way?
+- DP. Brilliant. 3 Pointers.
+
+244. Next Greater Element
+- Easy.
+
+245. Keyboard Row
+- Easy Hash table.
+
+246. Find Mode in Binary Search Tree
+- Easy hash table.
+
+247. Base 7
+- Why can't I do this? Modular calculation and divide it.
+
+248. Relative Ranks
+- Index handling.
+
+249. Peeking Iterator
+- How to use API.
+
+250. Game of Life
+- Done.
+
+251. Perfect Number
+- Brute Force is Timeout.
+- This problem is lame.
+
+252. Detect Capital
+- Case Split.
+
+253. Minimum Absolute Difference in BST
+- Inorder traversal, compare.
+
+254. Diameter of Binary Tree
+- Left deepest depth + Right deepest depth
+
+255. Bull and Cows
+- Use Counter and hash.
+
+256. Longest Increasing Subsequence
+- First, O(n^2) is possible. Check s[i+1:end] for each element.
+- Second, O(nlogn) -> DP. Did it.
+
+257. Range Sum Query 2D - Immutable
+- Easy
+
+258. Additive Number
+- Did it by using stack. Failed
+- Backtracking? Case Split.
+
+259. Range Sum Query - Mutable
+- Timeout by simple summation.
+- Timeout again by calculating sum a priori.
+- Classic Segment Tree Problem.
+- This code is so beautiful.
+
+260. Best Time to Buy and Sell Stock with Cooldown
+- DP?
+- Difficult DP Problem.
+
+261. Minimum Height Trees
+- DFS?
+- Difficult BFS.
+
+262. Reshape the Matrix
+- Careful! If strange, return original matrix.
+
+263. Subtree of Another tree
+- Idea was right. I had trobule implementing it.
+- Very good recursion problem. Memorize the solution!
+
+264. Longest Harmonious Subsequence
+- Deleting some or no elements without changing the order.
+- Brute Force -> O(n^2). Better way? -> Count if valid.
+- Use simple defaultdict dude.
+
+265. Diameter of Binary Tree
+- I had problem making recursion logic. Damn. Shame on me.
+
+266. Can Place Flowers
+- Did it by greedy counting.
+
+267. Merge Two Binary Trees
+- I'm not good at recursion. Memorize it.
+- Just think only one and first case when recursive.
